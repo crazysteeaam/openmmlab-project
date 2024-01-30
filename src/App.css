@@ -1,0 +1,163 @@
+#root {
+  /*max-width: 1280px;*/
+  /*margin: 0 auto;*/
+  /*padding: 2rem;*/
+  /*text-align: center;*/
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: white;
+    margin: 0;
+    padding: 10px;
+}
+
+#mainTitle {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.title-block {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.project-description {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #000000, #333333);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.project-image {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to right, #a8c0ff, #3f2b96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+
+.project-repo {
+    font-size: 12px;
+    /*font-weight: bold;*/
+    margin-left:10px;
+    text-align: left;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.project-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 10px 5px 10px;
+    text-align: left;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.icon {
+    /*font-size: 14px;*/
+    margin-right: 4px;
+    /*color: #ffffff;*/
+    text-decoration: none;
+    color:#909090;
+    font-size:0.6em
+}
+
+/* 弹窗样式 */
+.modal {
+    /*display: none; !* 默认隐藏 *!*/
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    padding: 40px 80px;
+    width: 70%;
+    max-width: 600px;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-overlay {
+    /*display: none; !* 默认隐藏 *!*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* 弹窗内的标题 */
+.modal-title {
+    font-size: 20px; /* 字号大一点 */
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* 弹窗内的作者 */
+.modal-author {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* 弹窗内的Abstract标题 */
+.modal-abstract-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* 弹窗内的文本 */
+.modal-content {
+    text-align: left;
+    line-height: 1.5;
+}
